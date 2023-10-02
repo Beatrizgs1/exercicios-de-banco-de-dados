@@ -20,5 +20,9 @@ SELECT UPPER(nome) AS nome_maiusculo FROM nomes;
 
 
 
+--c) Determinar o tamanho de cada nome usando LENGTH():
+SELECT nome, LENGTH(nome) AS tamanho_do_nome FROM nomes;
+
+
 
 
