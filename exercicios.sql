@@ -15,5 +15,10 @@ INSERT INTO nomes (nome) VALUES
 
 
 
+--b) Converter todos os nomes para maiúsculas usando UPPER():
+SELECT UPPER(nome) AS nome_maiusculo FROM nomes;
+
+
+
 
 
