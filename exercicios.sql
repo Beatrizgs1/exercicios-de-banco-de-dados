@@ -90,3 +90,12 @@ SELECT
 FROM eventos;
 
 
+--funçoes de controle fluxo
+--a) Usar IF() para determinar se um produto está "Em estoque" ou "Fora de estoque":
+SELECT 
+    produto,
+    IF(quantidade > 0, 'Em estoque', 'Fora de estoque') AS status_estoque
+FROM produtos;
+
+
+
