@@ -33,6 +33,19 @@ SELECT
 FROM nomes;
 
 
+--Funções Numéricas:
+--a) Criar e preencher a tabela 'produtos':
+CREATE TABLE produtos (
+    produto VARCHAR(255),
+    preco DECIMAL(10, 2),
+    quantidade INT
+);
+
+INSERT INTO produtos (produto, preco, quantidade) VALUES
+    ('Produto A', 15.99, 10),
+    ('Produto B', 9.99, 5),
+    ('Produto C', 29.95, 0);
+
 
 
 
