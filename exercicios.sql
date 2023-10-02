@@ -51,6 +51,11 @@ INSERT INTO produtos (produto, preco, quantidade) VALUES
 SELECT produto, ROUND(preco, 2) AS preco_arredondado FROM produtos;
 
 
+--c) Exibir o valor absoluto das quantidades usando ABS():
+SELECT produto, ABS(quantidade) AS quantidade_absoluta FROM produtos;
+
+
+
 
 
 
