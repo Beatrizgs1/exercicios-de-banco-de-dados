@@ -83,5 +83,10 @@ SELECT
 FROM eventos;
 
 
+--d) Exibir o nome do dia da semana de cada evento usando DAYNAME():
+SELECT 
+    data_evento,
+    DAYNAME(data_evento) AS nome_dia_semana
+FROM eventos;
 
 
