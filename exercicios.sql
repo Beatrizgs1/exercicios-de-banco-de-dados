@@ -76,5 +76,12 @@ INSERT INTO eventos (data_evento) VALUES
 INSERT INTO eventos (data_evento) VALUES (NOW());
 
 
+--c) Calcular o número de dias entre duas datas usando DATEDIFF():
+SELECT 
+    data_evento,
+    DATEDIFF('2023-10-01', data_evento) AS dias_ate_1o_outubro
+FROM eventos;
+
+
 
 
