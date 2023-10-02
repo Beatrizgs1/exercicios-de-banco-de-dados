@@ -60,5 +60,16 @@ SELECT produto, ABS(quantidade) AS quantidade_absoluta FROM produtos;
 SELECT AVG(preco) AS media_precos FROM produtos;
 
 
+--Funções de Data:
+--a) Criar e preencher a tabela 'eventos':
+CREATE TABLE eventos (
+    data_evento DATE
+);
+
+INSERT INTO eventos (data_evento) VALUES
+    ('2023-10-01'),
+    ('2023-10-05'),
+    ('2023-10-15');
+
 
 
