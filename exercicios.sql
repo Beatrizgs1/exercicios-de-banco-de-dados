@@ -24,5 +24,16 @@ SELECT UPPER(nome) AS nome_maiusculo FROM nomes;
 SELECT nome, LENGTH(nome) AS tamanho_do_nome FROM nomes;
 
 
+--d) Adicionar "Sr." antes dos nomes masculinos e "Sra." antes dos nomes femininos usando CONCAT():
+SELECT 
+    CASE 
+        WHEN nome LIKE '%João%' OR nome LIKE '%Roberto%' THEN CONCAT('Sr. ', nome)
+        ELSE CONCAT('Sra. ', nome)
+    END AS nome_com_tratamento
+FROM nomes;
+
+
+
+
 
 
