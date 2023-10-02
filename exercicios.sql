@@ -72,4 +72,9 @@ INSERT INTO eventos (data_evento) VALUES
     ('2023-10-15');
 
 
+--b) Inserir a data e hora atual em uma nova linha usando NOW():
+INSERT INTO eventos (data_evento) VALUES (NOW());
+
+
+
 
