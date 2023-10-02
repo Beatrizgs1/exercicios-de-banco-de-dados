@@ -56,6 +56,8 @@ SELECT produto, ABS(quantidade) AS quantidade_absoluta FROM produtos;
 
 
 
+--d) Calcular a média dos preços dos produtos usando AVG():
+SELECT AVG(preco) AS media_precos FROM produtos;
 
 
 
