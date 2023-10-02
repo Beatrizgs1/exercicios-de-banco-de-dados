@@ -47,6 +47,11 @@ INSERT INTO produtos (produto, preco, quantidade) VALUES
     ('Produto C', 29.95, 0);
 
 
+--b) Arredondar os preços para 2 casas decimais usando ROUND():
+SELECT produto, ROUND(preco, 2) AS preco_arredondado FROM produtos;
+
+
+
 
 
 
