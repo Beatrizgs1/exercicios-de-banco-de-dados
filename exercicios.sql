@@ -178,3 +178,22 @@ END;
 
 DELIMITER ;
 
+--c) Crie uma função que verifica se uma palavra é palíndromo ou não. Retorne 1 se for palíndromo ou 0 se não for.
+DELIMITER //
+
+CREATE FUNCTION PALINDROMO(palavra VARCHAR(255))
+RETURNS INT
+BEGIN
+    DECLARE reverso VARCHAR(255);
+    SET reverso = REVERSE(palavra);
+    IF palavra = reverso THEN
+        RETURN 1;
+    ELSE
+        RETURN 0;
+    END IF;
+END;
+//
+
+DELIMITER ;
+
+
