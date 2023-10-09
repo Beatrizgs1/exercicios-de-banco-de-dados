@@ -142,5 +142,10 @@ SELECT MAX(preco) AS produto_mais_caro FROM produtos;
 SELECT MIN(preco) AS produto_mais_barato FROM produtos;
 
 
+--d) Calcule a soma total dos produtos em estoque utilizando as funções SUM() e IF().
+SELECT 
+    SUM(IF(quantidade > 0, preco * quantidade, 0)) AS valor_total_em_estoque
+FROM produtos;
+
 
 
