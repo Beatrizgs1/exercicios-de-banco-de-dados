@@ -166,4 +166,15 @@ END;
 
 DELIMITER ;
 
+--b) Crie uma função que qualcule o exponencial de um número. Ex.: f_exponencial(2, 3) = 2³ = 8
+DELIMITER //
+
+CREATE FUNCTION F_EXPONENCIAL(base DECIMAL(10, 2), expoente INT)
+RETURNS DECIMAL(10, 2)
+BEGIN
+    RETURN POW(base, expoente);
+END;
+//
+
+DELIMITER ;
 
