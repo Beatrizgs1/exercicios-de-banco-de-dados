@@ -90,7 +90,7 @@ SELECT
 FROM eventos;
 
 
---funçoes de controle fluxo
+--Funçoes de controle fluxo
 --a) Usar IF() para determinar se um produto está "Em estoque" ou "Fora de estoque":
 SELECT 
     produto,
@@ -107,4 +107,16 @@ SELECT
     END AS categoria_preco
 FROM produtos;
 
+--Função Personalizada:
+--a) Crie uma função chamada TOTAL_VALOR que receba preço e quantidade, e retorne o valor total.
+DELIMITER //
+
+CREATE FUNCTION TOTAL_VALOR(preco DECIMAL(10, 2), quantidade INT)
+RETURNS DECIMAL(10, 2)
+BEGIN
+    RETURN preco * quantidade;
+END;
+//
+
+DELIMITER ;
 
