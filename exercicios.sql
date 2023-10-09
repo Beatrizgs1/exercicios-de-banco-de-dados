@@ -147,5 +147,23 @@ SELECT
     SUM(IF(quantidade > 0, preco * quantidade, 0)) AS valor_total_em_estoque
 FROM produtos;
 
+--Criando funções:
+--a) Crie uma função que retorno o Fatorial de um número. Ex.: 5! = 5.4.2.1
+DELIMITER //
+
+CREATE FUNCTION FATORIAL(n INT)
+RETURNS INT
+BEGIN
+    DECLARE resultado INT;
+    SET resultado = 1;
+    WHILE n > 0 DO
+        SET resultado = resultado * n;
+        SET n = n - 1;
+    END WHILE;
+    RETURN resultado;
+END;
+//
+
+DELIMITER ;
 
 
