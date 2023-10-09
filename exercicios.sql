@@ -138,5 +138,9 @@ SELECT COUNT(*) AS total_produtos FROM produtos;
 SELECT MAX(preco) AS produto_mais_caro FROM produtos;
 
 
+--c) Determine o produto mais barato usando a função MIN().
+SELECT MIN(preco) AS produto_mais_barato FROM produtos;
+
+
 
 
